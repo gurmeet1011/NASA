@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+a {
+    color: #1E90FF;
+}
+
+/* Header Styles */
+#heading {
+    background-color: #29294c;
+    padding: 20px 0;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px #1e1e2f;
+    border-bottom: 3px solid #1E90FF;
+}
+
+/* Form Styles */
+#search-form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2b2b44;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#search-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+#search-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+#btn {
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #0056b3;
+}
+
+/* Image Display Styles */
+#current-image {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #29294c;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#current-image img, #current-image iframe {
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Search History Styles */
+#search-history {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 500px;
+    background-color: #29294c;
+    border-radius:8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#search-history li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#search-history li:hover {
+    background-color: #1E90FF;
+    color: #fff;
+}
+
+#search-history li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #search-form, #current-image, #search-history {
+        width: 90%;
+    }
+}
